@@ -15,7 +15,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <ul className="flex space-x-8 text-text-color-primary">
+      <ul className="flex space-x-10 text-text-color-primary">
+      <li><Link href="/home">Home</Link></li>
         <li><Link href="/introduction">Introduction</Link></li>
         <li><Link href="/features">Features</Link></li>
         <li><Link href="/pricing">Pricing</Link></li>

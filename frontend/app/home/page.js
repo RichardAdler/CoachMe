@@ -1,10 +1,13 @@
 // app/home/page.js
 import Header from './components/Header';
+import Features from './components/Features';
+import SignupSection from './components/SignupSection';
 
 const HomePage = () => (
   <>
     <Header />
-    <div>Welcome to the Home Page</div>
+    <Features />
+    <SignupSection />
   </>
 );
 

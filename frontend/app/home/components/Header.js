@@ -16,14 +16,14 @@ const Header = () => {
             <label className="text-gray-500">Expertise</label>
             <div className="flex items-center mt-1 w-full">
               <IoBookOutline className="mr-2 text-gray-500" />
-              <select className="text-black outline-none font-semibold w-full">
+              <select className="text-black outline-none font-semibold w-full text-[20px]">
                 <option>Industry</option>
                 <option>Technology</option>
                 <option>Health</option>
               </select>
             </div>
           </div>
-          <div className="flex flex-col items-start px-4 py-2 border-l border-gray-300 flex-1">
+          <div className="flex flex-col items-start px-4 py-2 border-l border-gray-300 flex-1 text-[20px]">
             <label className="text-gray-500">Price Range</label>
             <div className="flex items-center mt-1 w-full">
               <CiCalendar className="mr-2 text-gray-500" />
