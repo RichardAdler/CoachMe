@@ -166,9 +166,14 @@ Once both the backend and frontend servers are running, you can access the appli
 
 ## Contributing
 
-  
+This is a university project and the following students are working on it:
 
-If you wish to contribute to this project, please fork the repository and create a pull request with your changes. Ensure that your code follows the project's coding standards and includes appropriate tests.
+- Kristian Nishanov
+- Costin-Ionut Potroanchenu
+- Richard Adler
+- Veronica Cuciula
+- Ilia Dochev
+- Oliver Pesti
 
   
 
