@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+
+
+nav {
+  display: flex;
+  padding: 16px 120px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+
+:root {
+  --primary-color: #5b3ac7;
+  --primary-contrast: #fe6602;
+  --text-color-white: #ffffff;
+  --text-color-primary: #121212;
+  --text-color-secondary: #757575;
+  --text-color-placeholder: #b0b0bd;
+
+  --font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--text-color-primary);
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 120%;
+}
+
+h1.white {
+  font-size: 56px;
+  line-height: 120%;
+  color: var(--text-color-white);
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 120%;
+}
+
+h4 {
+  font-size: 40px;
+  line-height: 120%;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+p {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+p.placeholder {
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color-placeholder);
+}
+
+p.semi-bold {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+p.bold {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.small {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.small.placeholder {
+  color: var(--text-color-placeholder);
+}
+
+.small.secondary {
+  color: var(--text-color-secondary);
+}
+
+.small.semi-bold {
+  font-weight: 600;
+}
+
+.small.bold {
+  font-weight: 700;
+}
+
+.extra-small {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.extra-small.placeholder {
+  color: var(--text-color-placeholder);
+}
+
+.extra-small.semi-bold {
+  font-weight: 600;
+}
