@@ -142,8 +142,7 @@ The frontend application should now be running on `http://localhost:3000` (or an
 ## Configuration
 
   
-
-You may need to configure environment variables for both the backend and frontend applications. This can typically be done by creating a `.env` file in the root of both the `backend` and `frontend` directories. Consult the documentation or code comments within each project to understand the necessary configurations.
+You need to configure environment variables for both the backend and frontend applications. This can be done by creating a `.env` file in the root of the `backend` directory and a `.env.local` file in the root of the `frontend` directory. Consult the documentation or code comments within each project to understand the necessary configurations.
 
   
 
