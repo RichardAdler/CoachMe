@@ -1,5 +1,6 @@
 // app/global-components/Navbar.js
-import Link from 'next/link';
+import Image from 'next/image';
+import Link from 'next/link'; 
 
 const Navbar = () => {
   return (
@@ -19,9 +20,10 @@ const Navbar = () => {
         <li><Link href="/features">Features</Link></li>
         <li><Link href="/pricing">Pricing</Link></li>
       </ul>
-      <div className="bg-primary-contrast text-white px-4 py-2 rounded">
+      <div className="bg-primary-contrast text-white px-4 py-2 rounded-md flex items-center">
+        <Image src="/images/userIcon.svg" alt="User Icon" width={20} height={21} className="mr-2" />
         <Link href="/login">Log in</Link>
-      </div>
+    </div>
     </nav>
   );
 }
