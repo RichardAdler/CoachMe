@@ -35,7 +35,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white min-h-[50vh] content-center">
       <div className="container mx-auto px-4 ">
         <div className="flex flex-col md:flex-row gap-10">
           <div className="md:w-1/3 mb-8 md:mb-0">

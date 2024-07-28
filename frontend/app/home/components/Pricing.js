@@ -7,7 +7,7 @@ const plans = [
     price: '£75',
     features: [
       'A pre-coaching needs assessment',
-      'A 60-minute chat over Webex or phone',
+      'A 45-minute chat over Webex or phone',
       'A follow-up plan of attack from your coach',
     ],
     buttonText: 'Buy Now',
@@ -17,9 +17,9 @@ const plans = [
     title: 'Master Coach',
     price: '£340',
     features: [
-      'A pre-coaching needs assessment',
-      'A 60-minute chat over Webex or phone',
-      'A follow-up plan of attack from your coach',
+      'Comprehensive pre-coaching needs analysis',
+      '75-minute strategy session via Webex or phone',
+      'Detailed, personalised action plan from your coach',
     ],
     buttonText: 'Buy Now',
     buttonColor: 'bg-primary-contrast', // special color for the middle plan
@@ -28,9 +28,9 @@ const plans = [
     title: 'Coach',
     price: '£165',
     features: [
-      'A pre-coaching needs assessment',
-      'A 60-minute chat over Webex or phone',
-      'A follow-up plan of attack from your coach',
+      'Initial coaching needs assessment',
+      '60-minute consultation via Webex or phone',
+      'Customized follow-up strategy from your coach',
     ],
     buttonText: 'Buy Now',
     buttonColor: 'bg-primary-color', // default button color
@@ -39,7 +39,7 @@ const plans = [
 
 const PricingSection = () => {
   return (
-    <section className=" min-h-[55vh] relative py-20" style={{ backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.35) 100%),  url('/images/pricing-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section className=" min-h-[60vh] relative py-20" style={{ backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.35) 100%),  url('/images/pricing-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
     <div className="container mx-auto px-4">
       <h2 className="text-5xl font-bold text-center mb-8 text-white">Our Pricing Plans</h2>
       <p className="text-xl text-center mb-12 text-white">We have three pricing plans below. You can also get started with a free trial, no credit card needed.</p>

@@ -5,15 +5,17 @@ import Introduction from './components/Introduction';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import FAQSection from './components/FAQSection';
+import Subscribe from './components/Subscribe';
 
 const HomePage = () => (
   <>
-    <Header />
-    <Features />
-    <Introduction />
-    <Testimonials />
-    <Pricing />
-    <FAQSection />
+    <div id="home"><Header /></div>
+    <div id="features"><Features /></div>
+    <div id="introduction"><Introduction /></div>
+    <div id="testimonials"><Testimonials /></div>
+    <div id="pricing"><Pricing /></div>
+    <div id="faq"><FAQSection /></div>
+    <div id="subscribe"><Subscribe /></div>    
   </>
 );
 
