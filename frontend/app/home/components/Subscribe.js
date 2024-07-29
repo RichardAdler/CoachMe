@@ -24,7 +24,7 @@ const SubscribeSection = () => {
                 placeholder="Your email address"
                 className="flex-grow p-5 rounded-2xl bg-white bg-opacity-40 text-white placeholder-white focus:outline-none"
               />
-              <button type="submit" className="bg-primary-color p-5 rounded-2xl text-white font-bold">
+              <button type="submit" className="bg-primary-color hover:bg-primary-contrast p-5 rounded-2xl text-white font-bold">
                 Subscribe
               </button>
             </form>

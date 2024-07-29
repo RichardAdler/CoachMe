@@ -1,6 +1,6 @@
-'use client'
-// app/home/components/Testimonials.js
-import React from 'react';
+'use client'; // Ensure this is at the top of the file
+
+import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Card from './Card';
@@ -68,83 +68,96 @@ const Testimonials = () => {
     }
   ];
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize(); // Set initial state
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <section className="py-12 bg-gray-100">
-    <div className="container mx-auto px-4">
-      <h2 className="text-4xl font-bold mb-8 pt-12">Our Coaches Testimonials</h2>
-      <Carousel 
-        showArrows={true} 
-        showThumbs={false} 
-        showStatus={false} 
-        infiniteLoop 
-        useKeyboardArrows 
-        autoPlay 
-        interval={10000} 
-        centerMode 
-        centerSlidePercentage={45}
-        renderIndicator={(onClickHandler, isSelected, index, label) => {
-          const indicatorStyles = {
-            marginLeft: 20,
-            color: isSelected ? '#000' : '#ccc',
-            cursor: 'pointer'
-          };
-          return (
-            <span
-              style={indicatorStyles}
-              onClick={onClickHandler}
-              onKeyDown={onClickHandler}
-              key={index}
-              role="button"
-              tabIndex={0}
-              aria-label={`${label} ${index + 1}`}
-            >
-              •
-            </span>
-          );
-        }}
-      >
-        {coaches.map((coach, index) => (
-          <Card key={index} {...coach} />
-        ))}
-      </Carousel>     
-      <h2 className="text-4xl font-bold mt-12 mb-8 pt-12">Our Students Testimonials</h2>  
-      <Carousel 
-        showArrows={true} 
-        showThumbs={false} 
-        showStatus={false} 
-        infiniteLoop 
-        useKeyboardArrows 
-        autoPlay 
-        interval={10000} 
-        centerMode 
-        centerSlidePercentage={45}
-        renderIndicator={(onClickHandler, isSelected, index, label) => {
-          const indicatorStyles = {
-            marginLeft: 20,
-            color: isSelected ? '#000' : '#ccc',
-            cursor: 'pointer'
-          };
-          return (
-            <span
-              style={indicatorStyles}
-              onClick={onClickHandler}
-              onKeyDown={onClickHandler}
-              key={index}
-              role="button"
-              tabIndex={0}
-              aria-label={`${label} ${index + 1}`}
-            >
-              •
-            </span>
-          );
-        }}
-      >
-        {students.map((student, index) => (
-          <Card key={index} {...student} />
-        ))}
-      </Carousel>
-    </div>
-  </section>
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-8 pt-12 text-center">Our Coaches Testimonials</h2>
+        <Carousel 
+          showArrows={true} 
+          showThumbs={false} 
+          showStatus={false} 
+          infiniteLoop 
+          useKeyboardArrows 
+          autoPlay 
+          interval={10000} 
+          centerMode={!isMobile}
+          centerSlidePercentage={isMobile ? 100 : 45}
+          renderIndicator={(onClickHandler, isSelected, index, label) => {
+            const indicatorStyles = {
+              marginLeft: 20,
+              color: isSelected ? '#000' : '#ccc',
+              cursor: 'pointer'
+            };
+            return (
+              <span
+                style={indicatorStyles}
+                onClick={onClickHandler}
+                onKeyDown={onClickHandler}
+                key={index}
+                role="button"
+                tabIndex={0}
+                aria-label={`${label} ${index + 1}`}
+              >
+                •
+              </span>
+            );
+          }}
+        >
+          {coaches.map((coach, index) => (
+            <Card key={index} {...coach} />
+          ))}
+        </Carousel>     
+        <h2 className="text-4xl font-bold mt-12 mb-8 pt-12 text-center">Our Students Testimonials</h2>  
+        <Carousel 
+          showArrows={true} 
+          showThumbs={false} 
+          showStatus={false} 
+          infiniteLoop 
+          useKeyboardArrows 
+          autoPlay 
+          interval={10000} 
+          centerMode={!isMobile}
+          centerSlidePercentage={isMobile ? 100 : 45}
+          renderIndicator={(onClickHandler, isSelected, index, label) => {
+            const indicatorStyles = {
+              marginLeft: 20,
+              color: isSelected ? '#000' : '#ccc',
+              cursor: 'pointer'
+            };
+            return (
+              <span
+                style={indicatorStyles}
+                onClick={onClickHandler}
+                onKeyDown={onClickHandler}
+                key={index}
+                role="button"
+                tabIndex={0}
+                aria-label={`${label} ${index + 1}`}
+              >
+                •
+              </span>
+            );
+          }}
+        >
+          {students.map((student, index) => (
+            <Card key={index} {...student} />
+          ))}
+        </Carousel>
+      </div>
+    </section>
   );
 };
 
