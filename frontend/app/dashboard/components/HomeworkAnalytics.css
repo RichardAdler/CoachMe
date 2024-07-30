@@ -1,0 +1,68 @@
+/* HomeworkAnalytics.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: var(--font-family);
+}
+
+.homework-analytics {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.homework-analytics h2 {
+  margin-bottom: 20px;
+  font-size: 32px; /* Heading 2 size */
+  font-weight: 600; /* Semi-bold */
+}
+
+.chart-legend-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-container {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px; /* Add space between chart and legend */
+  position: relative;
+}
+
+.chart-legend {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Ensure the legend items are stacked vertically */
+}
+
+.chart-legend li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif; /* Ensure legend items use Poppins font */
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.legend-color.completed {
+  background-color: #ff80ab; /* Custom color */
+}
+
+.legend-color.awaiting {
+  background-color: #ba68c8; /* Custom color */
+}
+
+.legend-color.unfinished {
+  background-color: #6a1b9a; /* Custom color */
+}

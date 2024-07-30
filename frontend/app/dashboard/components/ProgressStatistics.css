@@ -1,0 +1,53 @@
+/* ProgressStatistics.css */
+.progress-statistics {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-statistics h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .chart {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .bar {
+    width: 40px;
+    background-color: #6c5ce7;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    transition: height 0.3s;
+  }
+  
+  .bar span {
+    position: absolute;
+    bottom: 5px;
+    font-size: 0.8em;
+  }
+  
+  .bar-label {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .bar-label span {
+    display: block;
+    font-size: 0.8em;
+  }
+  

@@ -1,0 +1,12 @@
+/* Dashboard.css */
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-left: 60px; /* Adjust based on sidebar width */
+}
